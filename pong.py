@@ -1,15 +1,6 @@
 import pygame
 import random
 
-#DQN. CNN reads in pixel data. 
-#reinforcement learning. trial and error.
-#maximize action based on reward
-#agent envrioment loop
-#this is called Q Learning
-#based on just game state. mapping of state to action is policy
-#experience replay. learns from past policies
-
-
 FPS = 60
 
 WINDOW_WIDTH = 400
@@ -30,9 +21,6 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-
-#Paddle 1 is the learning agent
-#paddle 2 is the evil AI
 
 def drawBall(ballXPos, ballYPos):
     ball = pygame.Rect(ballXPos, ballYPos, BALL_WIDTH, BALL_HEIGHT)
